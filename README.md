@@ -1,2 +1,5 @@
 # DanJHaas.github.io
-A personal website for finding info about me
+My website :)
+
+Under Construction since 0 AD
+(i'll have it finished one day)
