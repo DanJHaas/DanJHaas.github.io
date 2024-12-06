@@ -1,5 +1,6 @@
 # DanJHaas.github.io
-My website :)
+Its a website... for me!
 
-Under Construction since 0 AD
-(i'll have it finished one day)
+A place to show off interesting projects and to contact me.
+
+

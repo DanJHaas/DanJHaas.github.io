@@ -1,0 +1,84 @@
+/* Project List */
+#project-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 3rem 1rem; /* Spacing between project boxes */
+}
+
+
+.project-box {
+  border: 1px solid #cceeff;
+  border-radius: 5px;
+  overflow: hidden;
+  background: #001f3f;
+  position: relative;
+  max-width: 30%; /* Limit the width of each project box */
+  width: 100%; /* Ensure each box fills its grid space */
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.project-header {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 100%; /* Aspect ratio of 1:1 (square) */
+  overflow: hidden;
+}
+
+.project-thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the image fill the width */
+  height: 100%; /* Make the image fill the height */
+  object-fit: cover; /* Ensures the image fills the space without distortion */
+}
+
+.project-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: #cceeff;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+/* Project Details (Dropdown) */
+.project-details {
+  display: none;
+  padding: 1rem;
+  background: #00264d;
+  color: #cceeff;
+}
+
+.project-details a {
+  color: #66b2ff;
+  text-decoration: none;
+}
+
+.project-details a:hover {
+  text-decoration: underline;
+}
+
+.project-box:hover {
+	cursor: pointer;
+}
+
+.project-box:hover .project-thumbnail {
+	filter: brightness(75%);
+}
+/* Hover and Expand */
+.project-box:hover .project-title {
+  background: rgba(0, 0, 0, 0.9); /* Darker on hover */
+}
+
+.project-box.open .project-details {
+  display: block;
+}
+
+

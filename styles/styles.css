@@ -1,0 +1,186 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #001f3f; /* Black background */
+  color: #cceeff; /* Light blue text */
+}
+
+.container {
+  width: 100%;
+  max-width: 1700px;
+  margin: auto;
+}
+
+/* Navbar */
+.navbar {
+  background: #013d79; /* Dark blue */
+  /* padding: 1rem 0; */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 3px solid #66b2ff;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav-logo-link {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem; 
+  height: 70px; /* Fixed navbar height */
+}
+
+.nav-logo {
+  /* display: flex; */
+  height: 75px; /* Adjust logo size */
+  /* width: auto; */
+  /* padding: 0; */
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  flex-grow: 1;
+}
+
+.nav-links li {
+  flex: 1; /* Make each list item take up equal space */
+}
+
+.nav-links a {
+  display: block; /* Make the entire section clickable */
+  text-align: center;
+  padding: 1rem 0; /* Adjust vertical padding for better click area */
+  color: #cceeff;
+  text-decoration: none;
+  font-size: 2.2rem;
+  height: 100%;
+  width: 100%;
+  transition: background 1.0s ease;
+}
+
+.nav-links a:hover {
+  background-color: #005dbb; /* Medium blue hover effect */
+  color: #fff; /* White text on hover */
+  transition: background 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  background: url('../images/hero-image.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.8); /* Black overlay with transparency */
+  padding: 2rem;
+  border-radius: 10px;
+  color: #cceeff;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+/* Sections */
+section {
+  padding: 4rem 0;
+  background: #001f3f; /* Dark blue for sections */
+  color: #cceeff;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+input, textarea, button {
+  padding: 0.8rem;
+  font-size: 1rem;
+  background: #00264d; /* Darker blue */
+  color: #cceeff;
+  border: none;
+  border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+  outline: 2px solid #66b2ff; /* Light blue focus ring */
+}
+
+button {
+  background: #004080; /* Medium blue */
+  cursor: pointer;
+}
+
+button:hover {
+  background: #66b2ff; /* Lighter blue */
+}
+
+/* Footer */
+footer {
+  background: #001f3f;
+  color: #cceeff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.page-heading {
+	font-size: 5rem;
+}
+
+.email-text {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.aboutme-para {
+	text-align: center;
+	font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+	inline-size: 550px;
+	overflow-wrap: break-word;
+}
+
+.aboutme-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 20%; 
+  height: 20%;
+}
